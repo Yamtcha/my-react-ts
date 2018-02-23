@@ -1,0 +1,46 @@
+h3 {
+  margin: 5px;
+  color: white;
+  position: relative;
+  font-size: 200%;
+  bottom: -20px;
+}
+
+.Background{
+  background-color: rgb(4, 0, 255); 
+  height: 1000px;
+  
+}
+#StartRace {
+  position: relative;
+  bottom: -120px;
+  width: 130px;
+  height: 40px;
+  right: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: green; 
+}
+#ResetRace{
+  position: relative;
+  bottom: -120px;
+  width: 130px;
+  height: 40px;
+  right: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: red; 
+}
+input{
+  position: relative;
+  bottom: -50px;
+  left:30px;
+  height: 30px;
+}
+p{
+  position: relative;
+  bottom: -50px;
+  left:23px;
+  height: 30px;
+  color: white;
+}

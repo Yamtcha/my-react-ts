@@ -6,8 +6,7 @@
 		"align": [
 			true,
 			"parameters",
-			"arguments",
-			"statements"
+			"arguments"
 		],
 		"ban": false,
 		"class-name": true,
@@ -18,10 +17,6 @@
 		"curly": true,
 		"eofline": false,
 		"forin": true,
-		"indent": [
-			true,
-			"tabs"
-		],
 		"interface-name": [
 			true,
 			"never-prefix"
@@ -40,12 +35,11 @@
 			"static-before-instance",
 			"variables-before-functions"
 		],
-		"no-any": true,
+		"no-any": false,
 		"no-arg": true,
 		"no-bitwise": true,
 		"no-console": [
 			true,
-			"log",
 			"error",
 			"debug",
 			"info",
@@ -57,13 +51,13 @@
 		"no-construct": true,
 		"no-debugger": true,
 		"no-duplicate-variable": true,
-		"no-empty": true,
+		"no-empty": false,
 		"no-eval": true,
 		"no-shadowed-variable": true,
 		"no-string-literal": true,
 		"no-switch-case-fall-through": true,
 		"no-trailing-whitespace": false,
-		"no-unused-expression": true,
+		"no-unused-expression": false,
 		"no-use-before-declare": true,
 		"one-line": [
 			true,
@@ -113,7 +107,7 @@
 			"allow-pascal-case"
 		],
 		"whitespace": [
-			true,
+			false,
 			"check-branch",
 			"check-decl",
 			"check-module",

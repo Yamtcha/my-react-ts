@@ -1,36 +1,33 @@
 h1, h2 {
   margin: 5px;
+  color: white;
+  position: relative;
+  left: 35%;
+  font-size: 400%;
+  bottom: 112px;
 }
 
 .App {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.Logo{
+  position: relative;
+  width: 220px;
+  left: 145px;
+  height: 120px;
+}
+.header{
+  height: 141px;
 }
 
 .App-header {
-  background-color: #014373;
-  height: 160px;
+  height: 120px;
   padding: 20px;
-  color: white;
+  background-image: url("http://2.bp.blogspot.com/-4T15yJnuijM/U7Fv20jIdpI/AAAAAAAAFa8/KUtHG9Gs2z8/w1200-h630-p-k-no-nu/(GRASS+2)+seamless+turf+lawn+green+ground+field+texture.jpg")
 }
-
-.App-title {
-  margin-top: 10px;
-  font-size: 1.5em;
-}
-
-.App-sub-title {
-  font-size: 1.2em;
-  font-weight: lighter;
-}
-
-.App-intro {
-  font-size: large;
-}
+.Progress{
+  color: pink;
+} 
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

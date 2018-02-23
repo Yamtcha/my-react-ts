@@ -1,0 +1,17 @@
+.finish{
+  position: relative;
+  bottom: 735px;
+  left: 1500px;
+  color: white;
+}
+.picture{
+   position: relative;
+   height: 107px;  
+   bottom: -204px;
+   padding: 12px;
+}
+.ProgressBar{
+    position: relative;
+    top: 143px;
+    left: 123px;
+}

@@ -2,19 +2,19 @@ import * as React from 'react';
 import { LinearProgress } from 'material-ui/Progress';
 import './Horse.css';
 
-interface Props {start: boolean;Login: string;Id: string;avator: string; color: string;
+interface Props {winner: Function;start: boolean;Login: string;Id: string;avator: string; color: string;
 }
 
 interface State {
   timer: number;
-	completed: number;
+  completed: number;
 }
 
 export class Horse extends React.Component <Props,State> {
 	constructor(props: Props) {
     super(props);
     this.state = {
-      timer: Math.floor(Math.random() * 500) ,
+      timer: Math.random() * 500 ,
       completed: 0
     };
     this.myTimer = this.myTimer.bind(this);
@@ -29,13 +29,16 @@ Speed (timer: any) {
 
 myTimer() {
     if(this.state.completed <= 100) {
-      this.setState({ completed: this.state.completed + Math.floor(Math.random() * 10) });
+      this.setState({ completed: this.state.completed + Math.floor(Math.random() * 2) });
+    } else {
+       this.props.winner(this.props.Login);       
     }
+
 }
 
 render() {
     
-       this.Speed(this.state.timer);
+    this.Speed(this.state.timer);
     
     return (
       < div className="RaceTrackBackground">

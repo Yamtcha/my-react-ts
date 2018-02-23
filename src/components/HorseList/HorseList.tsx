@@ -4,15 +4,16 @@ import {Horse} from '../Horse/Horse';
 
 const data = require('./team.json');
 
-interface Props {value: number;start:boolean;
+interface Props {value: number;start:boolean;winner: Function;
 }
 
-interface State {key: string;Login: string;Id: string;avator: string;color: string;start: boolean;
+interface State {key:string;Login: string;Id: string;avator: string;color: string;start: boolean;
 }
 
 export class HorseList extends React.Component<Props, State> {
 	constructor(props: Props) {
 		super(props);
+		this.Winner = this.Winner.bind(this);
 	}
 
 	GenerateHorse(value: any) {
@@ -35,6 +36,9 @@ export class HorseList extends React.Component<Props, State> {
 		}
 	   return progressbar;
 	}
+	Winner(winner: any) {
+       this.props.winner(winner);
+	}
 
 	render() {
 	    
@@ -49,6 +53,7 @@ export class HorseList extends React.Component<Props, State> {
 								 color={this.Color(this.props.value)[i]}
 								 key={data[element].id}
 								 start={this.props.start}
+								 winner={this.Winner}
 								/>; 
 					 }          
 				   )
